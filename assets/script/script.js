@@ -21,7 +21,7 @@ $(".time-slot").each(function () {
       $(this).addClass("past");
     }
   });
-
+//Save to local sotrage
   $(".saveBtn").click(function (event) {
     event.preventDefault();
     var value = $(this).siblings(".time-block").val();
