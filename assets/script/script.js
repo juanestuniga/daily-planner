@@ -22,3 +22,14 @@ $(".time-slot").each(function () {
     }
   });
 
+$(".saveBtn").on("click", function () {
+    var value = $(this).siblings(".time-block").val();
+    var time = $(this).parent().attr("id");
+    localStorage.setItem(time, value);
+});
+
+
+for (var i = 8; i < 20; i++) {
+    $(`.hour-${i}`).val(localStorage.getItem(`hour-${i}`));
+}
+
