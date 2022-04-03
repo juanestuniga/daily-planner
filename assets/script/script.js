@@ -2,6 +2,7 @@
 {
     var currentDay = moment().format("MMMM DD YYYY");
     $("#currentDay").append(currentDay);
+    var currentTime = moment().format("HH")
 
 }
 
@@ -9,10 +10,10 @@
 $(".time-slot").each(function () {
     var time = $(this).attr("id").split("-")[1];
     
-    if (currentDay == time) {
+    if (currentTime == time) {
       $(this).addClass("present");
       $(this).children(".description").addClass("white-text");
-    } else if (currentDay < time) {
+    } else if (currentTime < time) {
       $(this).removeClass("present");
       $(this).addClass("future");
     } else  {
