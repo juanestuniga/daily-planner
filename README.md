@@ -5,7 +5,7 @@ Daily work day planner.
 ## Project Description
 This is a daily workday planner so that the individual can add daily tasks during a work day.
 ## Link
--[web-quiz Repo](https://github.com/juanestuniga/daily-planner.git)
+-[daily-planner Repo](https://github.com/juanestuniga/daily-planner.git)
 
 -[Live](https://juanestuniga.github.io/daily-planner/) 
 
